@@ -61,7 +61,7 @@ export default function App() {
 
         const loader = new GLTFLoader();
         loader.load(
-          asset.localUri || "",
+          asset.uri || "",
           (gltf) => {
             model = gltf.scene;
             scene.add(model);
